@@ -93,11 +93,7 @@ nav ul li a:hover::after{
     position: relative;
     left: -200px;
 }
-@media screen and (max-width: 800px) {
-    .about-col-2{
-        display: none;
-    }
-    }
+
 .sub-title{
 font-size: 60px;
 font-weight: 600;
