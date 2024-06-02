@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6445cbd3a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myworks">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Mission/Vision">Mission/Vision</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>HI, I'm<span> Jerico </span><br>From 1CS-E</h1>
+        </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/formal.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Jerico Papagayo first year college in University of Cabuyao taking Bachelor of Science in Computer Science and if you interested in my background
+                        please click below skill, Project and education to knows details about me. 
+                    </p>
+                    
+
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Project</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphic Design</span><br>Proficient in graphic design software such as Adobe Photoshop, Illustrator, or InDesign.</li>
+                        <li><span>Time Management</span><br>Strong time management skills, with the ability to prioritize tasks and allocate time efficiently to meet deadlines.</li>
+                   
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <a href="ecommerce.html"><img style="width: 300px; transition: 1s;"  src="img/project.png" id="project" alt=""></a>
+
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Im currently student in</span><br>University of Cabuyao taking Bachelor of Science in Computer Science</li>
+                        <li><span>I learn Programming in</span><br>Youtube University</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Servicess -->
+<div id="Mission/Vision">
+    <div class="container">
+        <div class="services-list">
+            <div> 
+                <h2>MISSION</h2>
+                <p style="font-size: 20px;">As an institution of higher learning, Pamantasan ng Cabuyao is committed to equip individuals with knowledge, skills and values that will enable them to achieve their professional goals & provide leadership and service for national development.</p>
+                <a style="font-size: 20px;" href="#">Learn more</a>
+        </div>
+        <div> 
+            <h2>VISION</h2>
+            <p style="font-size: 20px;">A premier educational institution of higher learning in region 4, developing globally-competitive and value-laden professionals, and leaders instrumental to community development and nation-building.</p>
+            <a style="font-size: 20px;" href="#">Learn more</a>
+    </div>
+
+</div>
+</div>
+</div>
+    </div> 
+</div>
+
+       <!-- Works -->
+       <div id="myworks">
+<div class="card-container">
+    <div class="card">
+
+        <a href="prelim.html"><img src="img/front.jpg" alt=""></a>
+        <div style="color: black;" class="card-content">
+        
+            <h3>Prelim</h3>
+            <p>Here is the Prelim Activity, Quiz and Prelim Examination</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="midterm.html"><img src="img/front.jpg" alt=""></a>
+        <div style="color: black;" class="card-content">
+            <h3>Midterm</h3>
+            <p>Here is the midterm Activity, Quiz and Prelim Examination</p>
+        </div>
+    </div>
+
+    <div class="card">
+       <a href="final.html"><img src="img/front.jpg" alt=""></a>
+        <div style="color: black;" class="card-content">
+            <h3>Finals</h3>
+            <p>Here is the Finals Activity, Quiz and Prelim Examination</p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jericokun1620@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09122791344</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/echo3001"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/jawreckt/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+}
+    </script>
+</body>
+</html>
